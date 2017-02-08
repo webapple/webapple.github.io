@@ -7,25 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Hexo是使用node.js技术开发的一个纯静态博客系统，Hexo默认使用的评论插件是Disqus，Disqus上用的全是”非死不可“或者推特等国外的社交网站，不符合我天朝国情特此推出本教程。使用步骤如下：
 
-更改_config.yml文件（config中文意思为配置）这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：
-1duoshuo_shortna">
+更改_config.yml文件（config中文意思为配置）
+
+这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：
+ 12duoshuo_sho">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于hexo上添加评论功能">
 <meta property="og:url" content="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo是使用node.js技术开发的一个纯静态博客系统，Hexo默认使用的评论插件是Disqus，Disqus上用的全是”非死不可“或者推特等国外的社交网站，不符合我天朝国情特此推出本教程。使用步骤如下：
 
-更改_config.yml文件（config中文意思为配置）这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：
-1duoshuo_shortna">
+更改_config.yml文件（config中文意思为配置）
+
+这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：
+ 12duoshuo_sho">
 <meta property="og:image" content="http://yoursite.com/1.png">
 <meta property="og:image" content="http://yoursite.com/2.png">
-<meta property="og:updated_time" content="2017-02-08T09:19:21.518Z">
+<meta property="og:updated_time" content="2017-02-08T10:28:06.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于hexo上添加评论功能">
 <meta name="twitter:description" content="Hexo是使用node.js技术开发的一个纯静态博客系统，Hexo默认使用的评论插件是Disqus，Disqus上用的全是”非死不可“或者推特等国外的社交网站，不符合我天朝国情特此推出本教程。使用步骤如下：
 
-更改_config.yml文件（config中文意思为配置）这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：
-1duoshuo_shortna">
+更改_config.yml文件（config中文意思为配置）
+
+这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：
+ 12duoshuo_sho">
 <meta name="twitter:image" content="http://yoursite.com/1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -64,9 +70,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -99,24 +105,29 @@
       
         <p>Hexo是使用node.js技术开发的一个纯静态博客系统，Hexo默认使用的评论插件是Disqus，Disqus上用的全是”非死不可“或者推特等国外的社交网站，不符合我天朝国情特此推出本教程。使用步骤如下：</p>
 <ol>
-<li><p>更改_config.yml文件（config中文意思为配置）<br>这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname: 你站点的short_name</div></pre></td></tr></table></figure>
-<p>我的博客地址是<a href="https://webapple.github.io/" target="_blank" rel="external">https://webapple.github.io/</a>我博客地址的short_name（二级域名）就是webapple.github.io.git（我在这里就转了好久才弄好，我把short_name当成了多说的网址）<br>我用HBuilder改配置的图片<img src="1.png" alt="黑色炫酷背景"></p>
-</li>
-<li><p>修改themes\landscape\layout_partial\article.ejs模板<br>把</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line"> &lt;section id=&quot;comments&quot;&gt;</div><div class="line">   &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">     &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</div><div class="line">   &lt;/div&gt;</div><div class="line"> &lt;/section&gt;</div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</div><div class="line">  &lt;section id=&quot;comments&quot;&gt;</div><div class="line">    &lt;!-- 多说评论框 start --&gt;</div><div class="line">    &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;&quot; data-title=&quot;&lt;%= post.title %&gt;&quot; data-url=&quot;&lt;%= page.permalink %&gt;&quot;&gt;&lt;/div&gt;</div><div class="line">    &lt;!-- 多说评论框 end --&gt;</div><div class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    var duoshuoQuery = &#123;short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;&#125;;</div><div class="line">      (function() &#123;</div><div class="line">        var ds = document.createElement(&apos;script&apos;);</div><div class="line">        ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line">        ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;</div><div class="line">        ds.charset = &apos;UTF-8&apos;;</div><div class="line">        (document.getElementsByTagName(&apos;head&apos;)[0] </div><div class="line">         || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line">      &#125;)();</div><div class="line">      &lt;/script&gt;</div><div class="line">    &lt;!-- 多说公共JS代码 end --&gt;</div><div class="line">  &lt;/section&gt;</div><div class="line">  &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<li>更改_config.yml文件（config中文意思为配置）</li>
+</ol>
+<p>这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">duoshuo_shortname: 你站点的short_name</div></pre></td></tr></table></figure>
+<p>  我的博客地址是<a href="https://webapple.github.io/" target="_blank" rel="external">https://webapple.github.io/</a>我博客地址的short_name（二级域名）就是webapple.github.io.git（我在这里就转了好久才弄好，我把short_name当成了多说的网址）</p>
+<p>  我用HBuilder改配置的图片<img src="1.png" alt="黑色炫酷背景"></p>
+<ol>
+<li><p>修改themes\landscape\layout_partial\article.ejs模板</p>
+<p>把</p>
 </li>
 </ol>
-<p>3.然后提交到github上就行了(在主页上没有显示，在博客的单页面上显示）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line"></div><div class="line"> &lt;section id=&quot;comments&quot;&gt;</div><div class="line"></div><div class="line">   &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line"></div><div class="line">     &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</div><div class="line"></div><div class="line">   &lt;/div&gt;</div><div class="line"></div><div class="line"> &lt;/section&gt;</div><div class="line"></div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<p> 改为</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</div><div class="line"></div><div class="line">  &lt;section id=&quot;comments&quot;&gt;</div><div class="line"></div><div class="line">    &lt;!-- 多说评论框 start --&gt;</div><div class="line"></div><div class="line">    &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;&quot; data-title=&quot;&lt;%= post.title %&gt;&quot; data-url=&quot;&lt;%= page.permalink %&gt;&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">    &lt;!-- 多说评论框 end --&gt;</div><div class="line"></div><div class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line"></div><div class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line"></div><div class="line">    var duoshuoQuery = &#123;short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;&#125;;</div><div class="line"></div><div class="line">      (function() &#123;</div><div class="line"></div><div class="line">        var ds = document.createElement(&apos;script&apos;);</div><div class="line"></div><div class="line">        ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line"></div><div class="line">        ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;</div><div class="line"></div><div class="line">        ds.charset = &apos;UTF-8&apos;;</div><div class="line"></div><div class="line">        (document.getElementsByTagName(&apos;head&apos;)[0] </div><div class="line"></div><div class="line">         || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line"></div><div class="line">      &#125;)();</div><div class="line"></div><div class="line">      &lt;/script&gt;</div><div class="line"></div><div class="line">    &lt;!-- 多说公共JS代码 end --&gt;</div><div class="line"></div><div class="line">  &lt;/section&gt;</div><div class="line"></div><div class="line">  &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<p>3.然后提交到github上就行了(在主页上没有显示，在博客的单页面上显示）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$ hexo g</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
 <p><img src="2.png" alt=""></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/" data-id="ciywqw4yt0000rso0x76t4j0j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/" data-id="ciywtb74y0000fgo05l1fe2nb" class="article-share-link">Partager</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客文章/">博客文章</a></li></ul>
@@ -129,7 +140,7 @@
   
   
     <a href="/2017/01/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -166,7 +177,7 @@ var duoshuoQuery = {short_name:"datoublog"};
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Mot-clés</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客文章/">博客文章</a></li></ul>
     </div>
@@ -176,7 +187,7 @@ var duoshuoQuery = {short_name:"datoublog"};
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nuage de mot-clés</h3>
     <div class="widget tagcloud">
       <a href="/tags/博客文章/" style="font-size: 10px;">博客文章</a>
     </div>
@@ -195,7 +206,7 @@ var duoshuoQuery = {short_name:"datoublog"};
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -224,7 +235,7 @@ var duoshuoQuery = {short_name:"datoublog"};
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
