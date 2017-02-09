@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,44 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-地图插件代码——腾讯地图" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/09/地图插件代码——腾讯地图/" class="article-date">
+  <time datetime="2017-02-09T04:24:48.000Z" itemprop="datePublished">2017-02-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/09/地图插件代码——腾讯地图/">地图插件代码——腾讯地图</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="腾讯地图在网页上的应用"><a href="#腾讯地图在网页上的应用" class="headerlink" title="腾讯地图在网页上的应用"></a>腾讯地图在网页上的应用</h1><p>过程十分简就是把div放在相应的地方设置相应的id就行了。<br>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;  </div><div class="line">&lt;html&gt;  </div><div class="line">    &lt;head&gt;  </div><div class="line">        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;  </div><div class="line">        &lt;title&gt;腾讯地图&lt;/title&gt;  </div><div class="line">&lt;script charset=&quot;utf-8&quot; src=&quot;http://map.qq.com/api/js?v=2.exp&amp;key=AMZBZ-NBWAR-SCKWS-WSFQU-TZ4R6-YWBEV&quot;&gt;&lt;/script&gt;  </div><div class="line">&lt;script&gt;  </div><div class="line">    var init = function() &#123;  </div><div class="line">        var map_center = new soso.maps.LatLng(39.90927537429095,116.39838695526123);  </div><div class="line">        var map = new soso.maps.Map(document.getElementById(&quot;container&quot;), &#123;  </div><div class="line">            center : map_center,  </div><div class="line">            zoom : 14,  </div><div class="line">            panControl : true,  </div><div class="line">            zoomControl : true,  </div><div class="line">            zoomControlOptions : &#123;  </div><div class="line">                style : soso.maps.ZoomControlStyle.SMALL  </div><div class="line">            &#125;  </div><div class="line">        &#125;);  </div><div class="line">  </div><div class="line">        var marker = new soso.maps.Marker( &#123;  </div><div class="line">            map : map,  </div><div class="line">            position : map_center  </div><div class="line">        &#125;);  </div><div class="line">  </div><div class="line">        var infoWin = new soso.maps.InfoWindow( &#123;  </div><div class="line">            map : map  </div><div class="line">        &#125;);  </div><div class="line">  </div><div class="line">        soso.maps.event.addListener(  </div><div class="line">                marker,  </div><div class="line">                &apos;click&apos;,  </div><div class="line">                function(evt) &#123;  </div><div class="line">                    infoWin.open();  </div><div class="line">                    infoWin.setContent(&apos;&lt;div style=&quot;text-align:center;white-space:nowrap;margin:10px;&quot;&gt;这里是天安门&lt;/div&gt;&apos;);  </div><div class="line">                    infoWin.setPosition(evt.latLng);  </div><div class="line">                &#125;);  </div><div class="line">          </div><div class="line">     &#125;  </div><div class="line">&lt;/script&gt;  </div><div class="line">    &lt;/head&gt;  </div><div class="line">    &lt;body onload=&quot;init()&quot;&gt;  </div><div class="line">        &lt;div style=&quot;width: 603px; height: 300px; padding-top: 80px; padding-left: 80px;&quot; id=&quot;container&quot;&gt;&lt;/div&gt;  </div><div class="line">    &lt;/body&gt;  </div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>效果如下：<br><img src="..\3.jpg" alt="最终效果"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/09/地图插件代码——腾讯地图/" data-id="ciyxwiyoh00015co04tnud2hz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+ 
   
     <article id="post-关于hexo上添加评论功能" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -102,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/" data-id="ciyxu7d750002iwo013yf5euv" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/" data-id="ciyxwiyox00025co0pecee3oy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客文章/">博客文章</a></li></ul>
@@ -149,7 +187,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/19/hello-world/" data-id="ciyxu7d6s0000iwo0jo2gwaha" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/01/19/hello-world/" data-id="ciyxwiyoh00005co0gdw296ca" class="article-share-link">Share</a>
       
       
     </footer>
@@ -219,7 +257,7 @@ iii.      可以用于从中间插入、中间删除、以及任意位置替换�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/15/技术分享的前奏/" data-id="ciyxu7d6y0001iwo0exifusgg" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/01/15/技术分享的前奏/" data-id="ciyxwiyox00035co0ss3h94lq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -239,7 +277,7 @@ iii.      可以用于从中间插入、中间删除、以及任意位置替换�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客文章/">博客文章</a></li></ul>
     </div>
@@ -249,7 +287,7 @@ iii.      可以用于从中间插入、中间删除、以及任意位置替换�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
       <a href="/tags/博客文章/" style="font-size: 10px;">博客文章</a>
     </div>
@@ -268,9 +306,13 @@ iii.      可以用于从中间插入、中间删除、以及任意位置替换�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/09/地图插件代码——腾讯地图/">地图插件代码——腾讯地图</a>
+          </li>
         
           <li>
             <a href="/2017/02/08/关于hexo上添加评论功能/">关于hexo上添加评论功能</a>
@@ -297,7 +339,7 @@ iii.      可以用于从中间插入、中间删除、以及任意位置替换�
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
