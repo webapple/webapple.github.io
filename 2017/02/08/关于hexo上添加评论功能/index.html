@@ -19,7 +19,7 @@
 1duoshuo_shortna">
 <meta property="og:image" content="http://yoursite.com/1.jpg">
 <meta property="og:image" content="http://yoursite.com/2.jpg">
-<meta property="og:updated_time" content="2017-02-09T03:28:06.115Z">
+<meta property="og:updated_time" content="2017-02-15T14:46:09.924Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于hexo上添加评论功能">
 <meta name="twitter:description" content="Hexo是使用node.js技术开发的一个纯静态博客系统，Hexo默认使用的评论插件是Disqus，Disqus上用的全是”非死不可“或者推特等国外的社交网站，不符合我天朝国情特此推出本教程。使用步骤如下：
@@ -101,7 +101,7 @@
 <ol>
 <li><p>更改_config.yml文件（config中文意思为配置）<br>这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname: 你站点的short_name</div></pre></td></tr></table></figure>
-<p>我的博客地址是<a href="https://webapple.github.io/" target="_blank" rel="external">https://webapple.github.io/</a>我博客地址的short_name（二级域名）就是webapple.github.io.git（我在这里就转了好久才弄好，我把short_name当成了多说的网址）<br>我用HBuilder改配置的图片<img src="1.jpg" alt="黑色炫酷背景"></p>
+<p>我的博客地址是<a href="https://webapple.github.io/" target="_blank" rel="external">https://webapple.github.io/</a>我博客地址的short_name（二级域名）就是webapple.github.io.git（我在这里就转了好久才弄好，我把short_name当成了多说的网址，根据hexo各种框架的差异，此处有可能是“多说”注册时的二级域名，本人建议注册“多说时将二级域名设置为和博客主页相同的二级域名）<br>我用HBuilder改配置的图片<img src="1.jpg" alt="黑色炫酷背景"></p>
 </li>
 <li><p>修改themes\landscape\layout_partial\article.ejs模板<br>把</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line"> &lt;section id=&quot;comments&quot;&gt;</div><div class="line">   &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">     &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</div><div class="line">   &lt;/div&gt;</div><div class="line"> &lt;/section&gt;</div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
@@ -116,7 +116,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/" data-id="ciyzf6cek0001two04xj5oi26" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/" data-id="ciz726jpp0000d0o04dic7s0z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客文章/">博客文章</a></li></ul>
