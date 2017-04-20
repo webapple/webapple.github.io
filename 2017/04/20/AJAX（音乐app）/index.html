@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>AJAX（音乐app） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="关于AJAX的常见格式（音乐APP路径）1.原始AJAX跨域问题解决方法，——利用script标签进行跨域调取数据，123456789    &amp;lt;script&amp;gt;			function fun(data)&amp;#123;				console.log(data);				for(var i=0;i&amp;lt;data.subjects.length;i++)&amp;#123;					console.l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AJAX（音乐app）">
+<meta property="og:url" content="http://yoursite.com/2017/04/20/AJAX（音乐app）/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="关于AJAX的常见格式（音乐APP路径）1.原始AJAX跨域问题解决方法，——利用script标签进行跨域调取数据，123456789    &amp;lt;script&amp;gt;			function fun(data)&amp;#123;				console.log(data);				for(var i=0;i&amp;lt;data.subjects.length;i++)&amp;#123;					console.l">
+<meta property="og:updated_time" content="2017-04-20T01:02:31.110Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="AJAX（音乐app）">
+<meta name="twitter:description" content="关于AJAX的常见格式（音乐APP路径）1.原始AJAX跨域问题解决方法，——利用script标签进行跨域调取数据，123456789    &amp;lt;script&amp;gt;			function fun(data)&amp;#123;				console.log(data);				for(var i=0;i&amp;lt;data.subjects.length;i++)&amp;#123;					console.l">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-AJAX（音乐app）" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-AJAX（音乐app）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/04/20/AJAX（音乐app）/" class="article-date">
   <time datetime="2017-04-20T00:35:17.000Z" itemprop="datePublished">2017-04-20</time>
@@ -74,8 +76,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/20/AJAX（音乐app）/">AJAX（音乐app）</a>
+    <h1 class="article-title" itemprop="name">
+      AJAX（音乐app）
     </h1>
   
 
@@ -121,220 +123,40 @@
     </footer>
   </div>
   
-</article>
-
- 
+    
+<nav id="article-nav">
   
-    <article id="post-地图插件代码——腾讯地图" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/09/地图插件代码——腾讯地图/" class="article-date">
-  <time datetime="2017-02-09T04:24:48.000Z" itemprop="datePublished">2017-02-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/09/地图插件代码——腾讯地图/">地图插件代码——腾讯地图</a>
-    </h1>
+    <a href="/2017/02/09/地图插件代码——腾讯地图/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">地图插件代码——腾讯地图</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="腾讯地图在网页上的应用"><a href="#腾讯地图在网页上的应用" class="headerlink" title="腾讯地图在网页上的应用"></a>腾讯地图在网页上的应用</h4><p>过程十分简就是把div放在相应的地方设置相应的id就行了。<br>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;  </div><div class="line">&lt;html&gt;  </div><div class="line">    &lt;head&gt;  </div><div class="line">        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;  </div><div class="line">        &lt;title&gt;腾讯地图&lt;/title&gt;  </div><div class="line">&lt;script charset=&quot;utf-8&quot; src=&quot;http://map.qq.com/api/js?v=2.exp&amp;key=AMZBZ-NBWAR-SCKWS-WSFQU-TZ4R6-YWBEV&quot;&gt;&lt;/script&gt;  </div><div class="line">&lt;script&gt;  </div><div class="line">    var init = function() &#123;  </div><div class="line">        var map_center = new soso.maps.LatLng(39.90927537429095,116.39838695526123);  </div><div class="line">        var map = new soso.maps.Map(document.getElementById(&quot;container&quot;), &#123;  </div><div class="line">            center : map_center,  </div><div class="line">            zoom : 14,  </div><div class="line">            panControl : true,  </div><div class="line">            zoomControl : true,  </div><div class="line">            zoomControlOptions : &#123;  </div><div class="line">                style : soso.maps.ZoomControlStyle.SMALL  </div><div class="line">            &#125;  </div><div class="line">        &#125;);  </div><div class="line">  </div><div class="line">        var marker = new soso.maps.Marker( &#123;  </div><div class="line">            map : map,  </div><div class="line">            position : map_center  </div><div class="line">        &#125;);  </div><div class="line">  </div><div class="line">        var infoWin = new soso.maps.InfoWindow( &#123;  </div><div class="line">            map : map  </div><div class="line">        &#125;);  </div><div class="line">  </div><div class="line">        soso.maps.event.addListener(  </div><div class="line">                marker,  </div><div class="line">                &apos;click&apos;,  </div><div class="line">                function(evt) &#123;  </div><div class="line">                    infoWin.open();  </div><div class="line">                    infoWin.setContent(&apos;&lt;div style=&quot;text-align:center;white-space:nowrap;margin:10px;&quot;&gt;这里是天安门&lt;/div&gt;&apos;);  </div><div class="line">                    infoWin.setPosition(evt.latLng);  </div><div class="line">                &#125;);  </div><div class="line">          </div><div class="line">     &#125;  </div><div class="line">&lt;/script&gt;  </div><div class="line">    &lt;/head&gt;  </div><div class="line">    &lt;body onload=&quot;init()&quot;&gt;  </div><div class="line">        &lt;div style=&quot;width: 603px; height: 300px; padding-top: 80px; padding-left: 80px;&quot; id=&quot;container&quot;&gt;&lt;/div&gt;  </div><div class="line">    &lt;/body&gt;  </div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-<p>效果如下：<br><img src="3.jpg" alt="最终效果"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/09/地图插件代码——腾讯地图/" data-id="cj1ppqbup0001t0y7p33itt4b" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/无脑操作/">无脑操作</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
  
-  
-    <article id="post-关于hexo上添加评论功能" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/08/关于hexo上添加评论功能/" class="article-date">
-  <time datetime="2017-02-08T09:17:35.000Z" itemprop="datePublished">2017-02-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/08/关于hexo上添加评论功能/">关于hexo上添加评论功能</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hexo是使用node.js技术开发的一个纯静态博客系统，Hexo默认使用的评论插件是Disqus，Disqus上用的全是”非死不可“或者推特等国外的社交网站，不符合我天朝国情特此推出本教程。使用步骤如下：</p>
-<ol>
-<li><p>更改_config.yml文件（config中文意思为配置）<br>这里我们运用一个插件叫“多说”（是一个专业的评论插件）在_config.yml中添加多说的配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname: 你站点的short_name</div></pre></td></tr></table></figure>
-<p>我的博客地址是<a href="https://webapple.github.io/" target="_blank" rel="external">https://webapple.github.io/</a>我博客地址的short_name（二级域名）就是webapple.github.io.git（我在这里就转了好久才弄好，我把short_name当成了多说的网址，根据hexo各种框架的差异，此处有可能是“多说”注册时的二级域名，本人建议注册“多说时将二级域名设置为和博客主页相同的二级域名）<br>我用HBuilder改配置的图片<img src="1.jpg" alt="黑色炫酷背景"></p>
-</li>
-<li><p>修改themes\landscape\layout_partial\article.ejs模板<br>把</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname)&#123; %&gt;</div><div class="line"> &lt;section id=&quot;comments&quot;&gt;</div><div class="line">   &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">     &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</div><div class="line">   &lt;/div&gt;</div><div class="line"> &lt;/section&gt;</div><div class="line"> &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</div><div class="line">  &lt;section id=&quot;comments&quot;&gt;</div><div class="line">    &lt;!-- 多说评论框 start --&gt;</div><div class="line">    &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;&quot; data-title=&quot;&lt;%= post.title %&gt;&quot; data-url=&quot;&lt;%= page.permalink %&gt;&quot;&gt;&lt;/div&gt;</div><div class="line">    &lt;!-- 多说评论框 end --&gt;</div><div class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    var duoshuoQuery = &#123;short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;&#125;;</div><div class="line">      (function() &#123;</div><div class="line">        var ds = document.createElement(&apos;script&apos;);</div><div class="line">        ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line">        ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;</div><div class="line">        ds.charset = &apos;UTF-8&apos;;</div><div class="line">        (document.getElementsByTagName(&apos;head&apos;)[0] </div><div class="line">         || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line">      &#125;)();</div><div class="line">      &lt;/script&gt;</div><div class="line">    &lt;!-- 多说公共JS代码 end --&gt;</div><div class="line">  &lt;/section&gt;</div><div class="line">  &lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>3.然后提交到github上就行了(在主页上没有显示，在博客的单页面上显示）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
-<p><img src="2.jpg" alt="最终效果"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/08/关于hexo上添加评论功能/" data-id="cj1ppqbv30005t0y7db8zgalt" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客文章/">博客文章</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
- 
-  
-    <article id="post-技术分享的前奏" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/01/15/技术分享的前奏/" class="article-date">
-  <time datetime="2017-01-15T09:28:21.000Z" itemprop="datePublished">2017-01-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/15/技术分享的前奏/">一个前端小白的技术分享（JS最初级）。</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="前言：只适合新手观看（高手的话也可以批评指正QQ：2205553696）"><a href="#前言：只适合新手观看（高手的话也可以批评指正QQ：2205553696）" class="headerlink" title="前言：只适合新手观看（高手的话也可以批评指正QQ：2205553696）"></a>前言：只适合新手观看（高手的话也可以批评指正QQ：2205553696）</h3><hr>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><h5 id="前端自我感觉分为三个部分1-html-2-css-3-JS-其中最慢的就要算JS了（也谈不上难，就是有点逻辑而已）"><a href="#前端自我感觉分为三个部分1-html-2-css-3-JS-其中最慢的就要算JS了（也谈不上难，就是有点逻辑而已）" class="headerlink" title="前端自我感觉分为三个部分1.html 2.css 3.JS.其中最慢的就要算JS了（也谈不上难，就是有点逻辑而已）"></a>前端自我感觉分为三个部分1.html 2.css 3.JS.其中最慢的就要算JS了（也谈不上难，就是有点逻辑而已）</h5><ul>
-<li><h2 id="html部分"><a href="#html部分" class="headerlink" title="html部分"></a>html部分</h2></li>
-</ul>
-<h5 id="以后补充。"><a href="#以后补充。" class="headerlink" title="以后补充。"></a>以后补充。</h5><ul>
-<li><h2 id="js鼠标移入移出部分。"><a href="#js鼠标移入移出部分。" class="headerlink" title="js鼠标移入移出部分。"></a>js鼠标移入移出部分。</h2>鼠标移入事件onmouseover=””，用法就不说了，不会了去查w3c。<h4 id="值得注意的是-onmouseover-””这个事件在子元素上也会触发，这个东西就很操蛋了，"><a href="#值得注意的是-onmouseover-””这个事件在子元素上也会触发，这个东西就很操蛋了，" class="headerlink" title="值得注意的是 onmouseover=””这个事件在子元素上也会触发，这个东西就很操蛋了，"></a>值得注意的是 onmouseover=””这个事件在子元素上也会触发，这个东西就很操蛋了，</h4>解决方法改用onmouseenter,就可以了。事件效果和 onmouseover=””一样，就是不会再子元素上出发了。<h4 id="同理-onmouseout-””鼠标移出，用onmouseleave代替。"><a href="#同理-onmouseout-””鼠标移出，用onmouseleave代替。" class="headerlink" title="同理 onmouseout=””鼠标移出，用onmouseleave代替。"></a>同理 onmouseout=””鼠标移出，用onmouseleave代替。</h4></li>
-<li><h2 id="变量类型。"><a href="#变量类型。" class="headerlink" title="变量类型。"></a>变量类型。</h2><p>  a)   parseInt(); 从字符串中提取数字；<br>  b)   NaN; not a number（不是数字类型）;<br>  c)   NaN 和任何数计算 都是NaN;<br>  d)   NaN 不与任何值相等，包括它自身；要比较需要使用方法isNaN();<br>  e)   显性类型转换：<br>   i.      parseInt()/ parseFloat();<br>   ii.      NaN 的意义和检测：</p>
-</li>
-</ul>
-<ol>
-<li>意义：not a number;</li>
-<li>检测：isNaN();<br>f)   隐式类型转换：<br>i.      “==” ,就是隐式转换，它会先把两边的东西转成一样的类型，然后再进行比较；<br>ii.      减法、乘法、除法 也会进行自发的隐式转换；只有加号不可以；</li>
-</ol>
-<ul>
-<li><h2 id="数组排序。"><a href="#数组排序。" class="headerlink" title="数组排序。"></a>数组排序。</h2><h5 id="a-数组的length属性可以赋值；可以用length-0清空数组；"><a href="#a-数组的length属性可以赋值；可以用length-0清空数组；" class="headerlink" title="a)   数组的length属性可以赋值；可以用length=0清空数组；"></a>a)   数组的length属性可以赋值；可以用length=0清空数组；</h5></li>
-</ul>
-<p>b)   添加与删除元素：</p>
-<pre><code> i.      push() 和 pop() – 尾部添、删
-
-ii.      unshift() 和 shift() – 头部添、删
-</code></pre><p>c)   排序：</p>
-<pre><code>i.      sort():让sort排序数字，使用比较函数;
-</code></pre><p>d)   转换类：</p>
-<pre><code>   i.      concat() : 连接两个数组，生成一个新数组；
-
-  ii.      join(分隔符): 用分隔符组合数组元素，生成一个字符串；
-
-iii.      split(分隔符)： 和join相反，把字符串切成数组；
-</code></pre><p>e)   万能方法splice():</p>
-<pre><code>   i.      参数：splice(开始位置，长度，新元素，新元素...)；
-
-  ii.      作用：先从开始位置删除一定长度的元素，再在指定位置开始插入一些元素；
-
-iii.      可以用于从中间插入、中间删除、以及任意位置替换；
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/15/技术分享的前奏/" data-id="cj1ppqbuu0002t0y7itne2h9t" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
- 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/01/10/hello-world/" class="article-date">
-  <time datetime="2017-01-10T12:49:56.509Z" itemprop="datePublished">2017-01-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/10/hello-world/" data-id="cj1ppqbul0000t0y7uzgrkpyk" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
- 
-  
-
-</section>
+  <section id="comments">
+   <!-- 多说评论框 start -->
+<div id="ds-thread" class="ds-thread" data-thread-key="2017/04/20/AJAX（音乐app）/" data-title="AJAX（音乐app）" data-url="http://yoursite.com/2017/04/20/AJAX（音乐app）/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"datoublog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  </section>
+  </section>
         
           <aside id="sidebar">
   
